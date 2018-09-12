@@ -36,8 +36,7 @@ RUN mkdir -p \
 
 # get the version
 RUN curl https://dist.apache.org/repos/dist/release/rocketmq/${ROCKETMQ_VERSION}/rocketmq-all-${ROCKETMQ_VERSION}-bin-release.zip -o rocketmq-${ROCKETMQ_VERSION}.zip \
- && unzip rocketmq-${ROCKETMQ_VERSION}.zip \
- && mv rocketmq-all-${ROCKETMQ_VERSION}-bin-release ${ROCKETMQ_HOME} \
+ && unzip rocketmq-${ROCKETMQ_VERSION}.zip -d rocketmq-${ROCKETMQ_VERSION} \
  && rm -rf rocketmq-*.zip
 
 WORKDIR  ${ROCKETMQ_HOME}
