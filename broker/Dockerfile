@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-FROM nayuan/rocketmq:4.3.0
+FROM nayuan/rocketmq:4.3.1
 
 # add config
 COPY config ${ROCKETMQ_HOME}/conf
