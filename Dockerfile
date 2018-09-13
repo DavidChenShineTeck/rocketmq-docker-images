@@ -24,7 +24,7 @@ RUN yum install -y java-1.8.0-openjdk-headless unzip gettext nmap-ncat openssl\
 ARG version
 
 # Rocketmq version
-ENV ROCKETMQ_VERSION 4.2.0
+ENV ROCKETMQ_VERSION 4.3.0
 
 # Rocketmq home
 ENV ROCKETMQ_HOME  /opt/rocketmq-${ROCKETMQ_VERSION}
